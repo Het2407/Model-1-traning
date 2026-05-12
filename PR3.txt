@@ -1,0 +1,10 @@
+<html>
+<head>
+<title> Student Regestration Form</title>
+</head>
+<h2> Student Regestration Form </h2>
+<form>
+<label> Name </label><br>
+<input type="text" Name="Full Name"><br>
+</form>
+</html>
