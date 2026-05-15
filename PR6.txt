@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Audio and Video Tag Example</title>
+</head>
+
+<body>
+
+    <h2>Audio Tag Example</h2>
+
+    <audio controls>
+        <source src="C:\Users\helx1\OneDrive\Desktop" type="audio/mpeg">
+        Your browser does not support the audio tag.
+    </audio>
+
+    <br><br>
+
+    <h2>Video Tag Example</h2>
+
+    <video width="500" height="300" controls>
+        <source src="C:\Users\helx1\OneDrive\Desktop" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
