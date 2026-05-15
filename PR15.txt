@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Media Query, Layer, Float and Static Position</title>
+
+    <style>
+
+        /* BODY */
+        body{
+            font-family: Arial;
+            margin: 20px;
+            background-color: lightyellow;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        /* 1. FLOAT PROPERTY */
+        .float-box img{
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+
+        /* 2. LAYER USING Z-INDEX */
+        .layer-container{
+            position: relative;
+            height: 250px;
+            margin-top: 50px;
+        }
+
+        .layer1{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-size: 25px;
+        }
+
+        .layer2{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: absolute;
+            top: 70px;
+            left: 90px;
+            z-index: 2;
+            color: white;
+            text-align: center;
+            line-height: 200px;
+            font-size: 25px;
+        }
+
+        /* 3. STATIC POSITION */
+        .static-box{
+            position: static;
+            background-color: orange;
+            padding: 20px;
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        /* 4. MEDIA QUERY */
+        @media screen and (max-width:600px){
+
+            body{
+                background-color: lightblue;
+            }
+
+            h1{
+                color: darkblue;
+                font-size: 25px;
+            }
+
+            .static-box{
+                background-color: green;
+                color: white;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Properties Demo</h1>
+
+    <!-- FLOAT PROPERTY -->
+    <div class="float-box">
+        <img src="https://via.placeholder.com/150">
+
+        <p>
+            This paragraph wraps around the image because the image is floated to the left using the float property in CSS.
+        </p>
+    </div>
+
+    <br><br><br><br><br><br>
+
+    <!-- LAYER PROPERTY -->
+    <div class="layer-container">
+
+        <div class="layer1">
+            Layer 1
+        </div>
+
+        <div class="layer2">
+            Layer 2
+        </div>
+
+    </div>
+
+    <!-- STATIC POSITION -->
+    <div class="static-box">
+        This box uses static position (default position).
+    </div>
+
+</body>
+</html>
