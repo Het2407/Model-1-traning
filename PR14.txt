@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resume - Het Patel</title>
+
+    <style>
+
+        body{
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .resume{
+            max-width: 1000px;
+            margin: auto;
+            display: flex;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        /* LEFT SIDE */
+        .left{
+            width: 30%;
+            background-color: #1e3a8a;
+            color: white;
+            padding: 30px 20px;
+        }
+
+        .left h1{
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        .left h2{
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+
+        .left ul{
+            padding-left: 20px;
+            line-height: 2;
+        }
+
+        /* RIGHT SIDE */
+        .right{
+            width: 70%;
+            padding: 30px;
+        }
+
+        .right h2{
+            color: #1e3a8a;
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 5px;
+        }
+
+        .section{
+            margin-bottom: 25px;
+        }
+
+        p{
+            line-height: 1.6;
+        }
+
+        .contact{
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="resume">
+
+        <!-- LEFT SIDE -->
+        <div class="left">
+
+            <h1>HET PATEL</h1>
+
+            <div class="contact">
+                Ahmedabad, Gujarat <br>
+                +91 XXXXXXXXXX <br>
+                hetpatel@gmail.com
+            </div>
+
+            <h2>Skills</h2>
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>C Programming</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL</li>
+            </ul>
+
+            <h2>Languages</h2>
+
+            <ul>
+                <li>English</li>
+                <li>Hindi</li>
+                <li>Gujarati</li>
+            </ul>
+
+            <h2>Strengths</h2>
+
+            <ul>
+                <li>Creative Thinking</li>
+                <li>Teamwork</li>
+                <li>Problem Solving</li>
+                <li>Time Management</li>
+            </ul>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right">
+
+            <div class="section">
+                <h2>Career Objective</h2>
+
+                <p>
+                    Motivated Computer Science student passionate about
+                    programming and web development. Seeking opportunities
+                    to enhance technical skills and contribute to innovative
+                    projects.
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Education</h2>
+
+                <p>
+                    <strong>B.Tech in Computer Science</strong><br>
+                    :contentReference[oaicite:0]{index=0}
+                </p>
+
+                <p>
+                    Pursuing Graduation
+                </p>
+            </div>
+
+            <div class="section">
+                <h2>Projects</h2>
+
+                <ul>
+                    <li>Student Registration Form using HTML & CSS</li>
+                    <li>Animated Website using CSS Animation</li>
+                    <li>Invitation Card Website</li>
+                    <li>Audio & Video Player using HTML</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Achievements</h2>
+
+                <ul>
+                    <li>Participated in coding events</li>
+                    <li>Created responsive web pages</li>
+                    <li>Completed mini web development projects</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>Declaration</h2>
+
+                <p>
+                    I hereby declare that the above information is true
+                    to the best of my knowledge.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
