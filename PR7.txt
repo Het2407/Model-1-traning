@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invitation Card</title>
+</head>
+
+<body>
+
+  <h1>🎉 You're Invited 🎉</h1>
+
+  <p><b>Event:</b> College Fest Celebration</p>
+
+  <p><b>Venue:</b> Silver Oak University, Ahmedabad</p>
+
+  <p><b>Date:</b> 25 June 2026</p>
+
+  <p><b>Time:</b> 10:00 AM onwards</p>
+
+  <hr>
+
+  <h3>📺 Event Video</h3>
+  <video width="320" height="240" controls>
+    <source src="event-video.mp4" type="video/mp4">
+    Your browser does not support video.
+  </video>
+
+  <h3>🔊 Invitation Audio</h3>
+  <audio controls>
+    <source src="invitation-audio.mp3" type="audio/mpeg">
+    Your browser does not support audio.
+  </audio>
+
+  <hr>
+
+  <h3>📍 Location</h3>
+  <p>
+    <a href="https://www.google.com/maps/search/?api=1&query=Silver+Oak+University+Ahmedabad" target="_blank">
+      Open Location in Google Maps
+    </a>
+  </p>
+
+</body>
+</html>
