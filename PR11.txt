@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined CSS Example</title>
+
+    <!-- External CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="container box">
+
+        <h1 class="red big center">
+            Welcome Website
+        </h1>
+
+        <p class="blue text">
+            This is a paragraph inside container.
+        </p>
+
+        <!-- Card -->
+        <div class="card shadow">
+
+            <h2 class="green center">
+                Student Details
+            </h2>
+
+            <p class="text">
+                Name: Rahul
+            </p>
+
+            <button class="btn green round">
+                Submit
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
