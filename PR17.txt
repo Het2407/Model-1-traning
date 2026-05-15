@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Effects Demo</title>
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#111;
+            color:white;
+        }
+
+        /* =======================
+           FONT AWESOME SECTION
+        ========================*/
+
+        .icons{
+            text-align:center;
+            padding:40px;
+            background:#1e1e1e;
+        }
+
+        .icons h1{
+            margin-bottom:20px;
+        }
+
+        .icons i{
+            font-size:50px;
+            margin:20px;
+            color:cyan;
+            transition:0.5s;
+        }
+
+        .icons i:hover{
+            color:yellow;
+            transform:scale(1.3) rotate(10deg);
+        }
+
+        /* =======================
+           PARALLAX EFFECT
+        ========================*/
+
+        .parallax{
+            background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+            height:500px;
+
+            background-attachment:fixed;
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .parallax h1{
+            background:rgba(0,0,0,0.5);
+            padding:20px;
+            border-radius:10px;
+            font-size:50px;
+        }
+
+        /* =======================
+           IMAGE HOVER EFFECT
+        ========================*/
+
+        .image-section{
+            text-align:center;
+            padding:50px;
+            background:#222;
+        }
+
+        .image-box{
+            width:300px;
+            margin:auto;
+            overflow:hidden;
+            border-radius:20px;
+        }
+
+        .image-box img{
+            width:100%;
+            transition:0.6s;
+        }
+
+        .image-box:hover img{
+            transform:scale(1.2) rotate(5deg);
+            filter:brightness(120%);
+        }
+
+        /* =======================
+           VIDEO POSITION EFFECT
+        ========================*/
+
+        .video-section{
+            position:relative;
+            height:500px;
+            overflow:hidden;
+        }
+
+        .video-section video{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+        }
+
+        .video-text{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%,-50%);
+            color:white;
+            text-align:center;
+            background:rgba(0,0,0,0.5);
+            padding:20px;
+            border-radius:15px;
+        }
+
+        .video-text h1{
+            font-size:50px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- FONT AWESOME -->
+    <section class="icons">
+
+        <h1>Font Awesome Icons</h1>
+
+        <i class="fa-solid fa-heart"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-camera"></i>
+        <i class="fa-solid fa-music"></i>
+
+    </section>
+
+    <!-- PARALLAX EFFECT -->
+    <section class="parallax">
+
+        <h1>Parallax Effect</h1>
+
+    </section>
+
+    <!-- IMAGE HOVER EFFECT -->
+    <section class="image-section">
+
+        <h1>Image Hover Effect</h1>
+        <br><br>
+
+        <div class="image-box">
+
+            <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d"
+            alt="Nature Image">
+
+        </div>
+
+    </section>
+
+    <!-- VIDEO POSITION EFFECT -->
+    <section class="video-section">
+
+        <video autoplay muted loop>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+
+        <div class="video-text">
+            <h1>Video Position Effect</h1>
+            <p>Text positioned over video</p>
+        </div>
+
+    </section>
+
+</body>
+</html>
