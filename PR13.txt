@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HELX Animation</title>
+
+    <style>
+
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+            font-family:Arial;
+
+            background-color:#222;
+
+            background-image:url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+            background-size:cover;
+            background-position:center;
+
+            overflow:hidden;
+        }
+
+        /* HELX Background Text */
+        .bg-text{
+            position:absolute;
+            top:30%;
+            left:50%;
+            transform:translateX(-50%);
+            font-size:120px;
+            font-weight:bold;
+            color:rgba(255,255,255,0.2);
+            letter-spacing:15px;
+        }
+
+        /* Each Letter */
+        .bg-text span{
+            display:inline-block;
+            opacity:0;
+        }
+
+        /* Animation */
+        .animate span{
+            animation:drop 1s forwards;
+        }
+
+        .animate span:nth-child(1){
+            animation-delay:0s;
+        }
+
+        .animate span:nth-child(2){
+            animation-delay:0.3s;
+        }
+
+        .animate span:nth-child(3){
+            animation-delay:0.6s;
+        }
+
+        .animate span:nth-child(4){
+            animation-delay:0.9s;
+        }
+
+        @keyframes drop{
+
+            0%{
+                opacity:0;
+                transform:translateX(-300px) rotate(-180deg);
+            }
+
+            60%{
+                opacity:1;
+                transform:translateY(40px);
+            }
+
+            100%{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        p{
+            color:white;
+            font-size:28px;
+        }
+
+        button{
+            padding:10px 20px;
+            font-size:18px;
+            border:none;
+            cursor:pointer;
+            border-radius:5px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="bg-text" id="helx">
+        <span>H</span>
+        <span>E</span>
+        <span>L</span>
+        <span>X</span>
+    </div>
+
+    <p>Click the button</p>
+
+    <button onclick="startAnimation()">
+        Click Me
+    </button>
+
+    <script>
+
+        function startAnimation(){
+
+            let text = document.getElementById("helx");
+
+            text.classList.remove("animate");
+
+            void text.offsetWidth;
+
+            text.classList.add("animate");
+        }
+
+    </script>
+
+</body>
+</html>
